@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Header</title>
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+        /* Header Styling */
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 30px;
+            background: white;
+            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        /* Logo */
+        .logo img {
+            height: 50px;
+        }
+        /* Navigation Links */
+        .nav-links ul, .auth-links ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        .nav-links a, .auth-links a {
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 8px 12px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .nav-links a:hover, .auth-links a:hover {
+            background: #f0f0f0;
+        }
+        .nav-links {
+            border-style: solid;
+            border-color: white;
+            border-left-color: rgb(211, 211, 214);
+            border-right-color: rgb(211, 211, 214);
+            padding: 14px 400px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <!-- Logo -->
+    <div class="logo">
+        <a href="#">
+            <img src="https://alexharkness.com/wp-content/uploads/2020/06/logo-2.png" alt="Logo">
+        </a>
+    </div>
+    
+    <!-- Navigation Links -->
+    <nav class="nav-links">
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">CART</a></li>
+            <li><a href="#">SHOP</a></li>
+        </ul>
+    </nav>
+
+    <!-- Login/Signup -->
+    <div class="auth-links">
+        <ul>
+            <li><a href="#">LOGIN</a></li>
+            <li><a href="#">SIGN UP</a></li>
+        </ul>
+    </div>
+</header>
+
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather App</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to right, #f4f4f4, #e0f7fa);
+    }
+
+    .container {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .main-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 24px;
+      border-radius: 16px;
+      background-color: white;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      width: 90%;
+      max-width: 400px;
+    }
+
+    .form-container {
+      display: flex;
+      margin-bottom: 20px;
+    }
+
+    .input-bar {
+      border: none;
+      flex: 1;
+      padding: 10px 12px;
+      border-radius: 8px;
+      background-color: #f0f0f0;
+      font-size: 16px;
+      margin-right: 10px;
+      transition: background 0.2s ease;
+    }
+
+    .input-bar:focus {
+      outline: none;
+      background-color: #e7e7e7;
+    }
+
+    .sub-button {
+      background-color: #16da16;
+      color: white;
+      padding: 10px 14px;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 15px;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+    }
+
+    .sub-button:hover {
+      background-color: #13c413;
+    }
+
+    .return-container {
+      min-height: 150px;
+      padding: 16px;
+      background-color: #f8f8f8;
+      border-radius: 10px;
+      color: #333;
+      font-size: 16px;
+      overflow-wrap: break-word;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="main-container">
+      <form class="form-container" id="weather-form">
+        <input class="input-bar" type="text" placeholder="Enter city" id="city-input" required />
+        <button type="submit" class="sub-button">Get Weather</button>   
+      </form>
+
+      <div class="return-container" id="weather-output">
+        <!-- Weather data will appear here -->
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
